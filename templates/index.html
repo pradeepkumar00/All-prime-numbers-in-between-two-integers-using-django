@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All the prime no.</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Whats'app redirect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  background-color: #EBECF0;
+}
+
+body, p, input, select, textarea, button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div, p {
+  color: #BABECC;
+  text-shadow: 1px 1px 1px #FFF;
+}
+form {
+  padding: 16px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 30px;
+  border-radius: 320px;
+  padding: 30px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+button {
+  color: #61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
+button.red {
+  display: block;
+  width: 100%;
+  color: #AE1100;
+}
+
+</style>
+</head>
+<body>
+
+<form id="frm1" action="calculate" method="post">
+{% csrf_token %}
+  <div class="segment">
+    <h1>Whats'app form</h1>
+  </div>
+
+  <label>
+    <input type="text" name="f_int" placeholder="First Integer"/>
+  </label>
+  <label>
+    <input type="text" name="s_int" placeholder="Second Interger"/>
+  </label>
+
+    <button class="red"  type="submit"><i class="icon ion-md-lock"></i>submit</button>
+</form>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var num = "";
+  var msg = "";
+    text += x.elements[0].value + "<br>";
+	num += x.elements[1].value;
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo1").innerHTML = "<a href='https://api.whatsapp.com/send?phone=91"+ num +"' target='blank'><i class='fa fa-whatsapp' style='font-size:60px;color:red'></i></a>";
+  if(text!="" && num !=""){
+	  var y=document.getElementById("dis");
+	  y.style.display="block";
+	  }
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>
