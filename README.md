@@ -1,7 +1,10 @@
 # All-prime-numbers-in-between-two-integers-using-django
 
 For run this directory use this command line
-python manage.py runserver
+:-$ python manage.py runserver
+
+primeno is main directory 
+prime is app directory
 
 
  for database 
