@@ -11,3 +11,10 @@ prime is app directory
  127.0.0.8000/admin
  user name:1234
  password: 1234
+
+We have save these details in datbase(sqlite3)
+First no. ;
+Second no:
+Time;
+Time taken to calculate all the numbers.
+All the number that is calculated.
